@@ -64,6 +64,11 @@ main {
     grid-column: 2;
 }
 
+.date {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+}
+
 .like-btn > img {
     max-width: 10%;
     float: left;
@@ -79,4 +84,11 @@ main {
 
 .post > img {
     max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.log > a {
+    text-decoration: none;
 }
