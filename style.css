@@ -11,6 +11,10 @@ header {
     background-color: aquamarine;
 }
 
+header > section {
+    margin-right: auto;
+}
+
 .user-avatar {
     border: #000 solid;
     border-radius: 50%;
@@ -91,4 +95,5 @@ main {
 
 .log > a {
     text-decoration: none;
+    color: #b6b6b6;
 }

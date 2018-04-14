@@ -1,16 +1,74 @@
-let postr = [
-    {
-        id: '1',
-        author: 'Pablo228',
-        date: new Date(),
-        photoLink: 'src/post.jpg',
-        hashtags: ['#omagad', '#lol']
-    }
-];
-
-function month(monthNum) {
-    return ;
-}
+(function () {
+    let posts = [
+        {
+            id: '1',
+            author: 'USER228',
+            date: new Date(),
+            photoLink: 'src/post.jpg',
+            hashtags: ['#omagad', '#lol', '#wtf']
+        },
+        {
+            id: '2',
+            author: 'EscobaRrR',
+            date: new Date(),
+            photoLink: 'src/post.jpg',
+            hashtags: ['#eto', '#tagi']
+        },
+        {
+            id: '3',
+            author: 'Pablo228',
+            date: new Date(),
+            photoLink: 'src/post.jpg',
+            hashtags: ['#omagad', '#lol']
+        },
+        {
+            id: '4',
+            author: 'Pablo228',
+            date: new Date(),
+            photoLink: 'src/post.jpg',
+            hashtags: ['#omagad', '#lol']
+        },
+        {
+            id: '5',
+            author: 'Pablo228',
+            date: new Date(),
+            photoLink: 'src/post.jpg',
+            hashtags: ['#omagad', '#lol']
+        },
+        {
+            id: '6',
+            author: 'Pablo228',
+            date: new Date(),
+            photoLink: 'src/post.jpg',
+            hashtags: ['#omagad', '#lol']
+        },
+        {
+            id: '7',
+            author: 'Pablo228',
+            date: new Date(),
+            photoLink: 'src/post.jpg',
+            hashtags: ['#omagad', '#lol']
+        },
+        {
+            id: '8',
+            author: 'Pablo228',
+            date: new Date(),
+            photoLink: 'src/Hlib-Paper.jpg',
+            hashtags: ['#omagad', '#lol']
+        },
+        {
+            id: '9',
+            author: 'F1latovv',
+            date: new Date(),
+            photoLink: 'src/Nikita-Max.jpg',
+            hashtags: ['#omagad', '#lol', '#nice_roof']
+        }
+    ];
+    posts.forEach((item) => {
+        let toPost = createPost(item);
+        document.querySelector('main').appendChild(toPost);
+    });
+})();
 
 function createPost(post) {
     let section = document.createElement('section');
@@ -30,7 +88,7 @@ function createPost(post) {
             case 11: return 'November';
             case 12: return 'December';
         }
-    }
+    };
     section.innerHTML = `
     <section class="post">
         <img src="${post.photoLink}"/>
@@ -55,5 +113,6 @@ function createPost(post) {
 
 function addPhotoPost(post) {
     let toPost = createPost(post);
-    document.querySelector('main').appendChild(toPost);
+    let main = document.querySelector('main');
+    main.appendChild(toPost);
 }
